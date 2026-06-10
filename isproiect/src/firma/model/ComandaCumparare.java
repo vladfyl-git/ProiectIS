@@ -16,7 +16,6 @@ public class ComandaCumparare extends Comanda {
             p.reduStoc(1);
             System.out.println(" -> Adaugat in cos: " + p.getNume() + " (" + p.getPret() + " RON)");
 
-            // Regula de business: adaugă articolul special de promoție cu preț negativ
             if (p.isEsteLaPromotie()) {
                 aplicaPromotie(p);
             }

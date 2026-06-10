@@ -4,7 +4,7 @@ public abstract class Utilizator {
     protected int id;
     protected String username;
     protected String parola;
-    protected boolean esteLogat; // [cite: 4]
+    protected boolean esteLogat;
 
     public Utilizator(int id, String username, String parola) {
         this.id = id;
@@ -13,7 +13,7 @@ public abstract class Utilizator {
         this.esteLogat = false;
     }
 
-    public boolean login(String user, String pass) { // [cite: 7]
+    public boolean login(String user, String pass) {
         if (this.username.equals(user) && this.parola.equals(pass)) {
             this.esteLogat = true;
             return true;

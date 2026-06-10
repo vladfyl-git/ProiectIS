@@ -1,13 +1,13 @@
 package firma.model;
 
-public class Descriere { // [cite: 10]
-    private String tipComponenta; // [cite: 11]
-    private String textPrezentare; // [cite: 12]
-    private int scorCumparatori; // [cite: 13]
+public class Descriere {
+    private String tipComponenta;
+    private String textPrezentare;
+    private int scorCumparatori;
 
     public Descriere(String tipComponenta, String textPrezentare, int scorCumparatori) {
         this.tipComponenta = tipComponenta;
-        this.textPrezentare = limiteazaText(textPrezentare, 100); // Maxim 100 de cuvinte [cite: 12]
+        this.textPrezentare = limiteazaText(textPrezentare, 100);
         setScorCumparatori(scorCumparatori);
     }
 
@@ -23,7 +23,7 @@ public class Descriere { // [cite: 10]
         return textLimitat.toString().trim() + "...";
     }
 
-    public void setScorCumparatori(int scorCumparatori) { // [cite: 13]
+    public void setScorCumparatori(int scorCumparatori) {
         if (scorCumparatori >= 1 && scorCumparatori <= 5) {
             this.scorCumparatori = scorCumparatori;
         } else {

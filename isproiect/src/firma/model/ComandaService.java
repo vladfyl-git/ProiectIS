@@ -14,7 +14,6 @@ public class ComandaService extends Comanda {
 
     @Override
     public float calculeazaTotal() {
-        // Costul se stabilește ulterior evaluării tehnice fizice
         return 0.0f;
     }
 

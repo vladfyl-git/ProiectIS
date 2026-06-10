@@ -1,13 +1,13 @@
 package firma.model;
 import firma.enums.TipProdus;
 
-public class Produs { // [cite: 3]
+public class Produs {
     private int id;
     private String nume;
-    private float pret; // [cite: 5]
+    private float pret;
     private int stoc;
     private TipProdus categorie;
-    private Descriere detalii; // [cite: 6]
+    private Descriere detalii;
     private boolean esteLaPromotie;
 
     public Produs(int id, String nume, float pret, int stoc, TipProdus categorie, Descriere detalii) {

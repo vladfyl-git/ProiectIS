@@ -2,7 +2,7 @@ package firma.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Client extends Utilizator { // [cite: 1]
+public class Client extends Utilizator {
     private String nume;
     private String email;
     private String adresa;
@@ -18,7 +18,7 @@ public class Client extends Utilizator { // [cite: 1]
         this.istoricComenzi = new ArrayList<>();
     }
 
-    public void plaseazaComanda(Comanda c) { // [cite: 9]
+    public void plaseazaComanda(Comanda c) {
         if (!esteLogat) {
             System.out.println("[PERMISIUNE RESPINSA] Trebuie sa fiti autentificat pentru a plasa comenzi!");
             return;
